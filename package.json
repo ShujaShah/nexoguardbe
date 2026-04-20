@@ -9,9 +9,11 @@
     "start": "node dist/server.js"
   },
   "dependencies": {
+    "@fastify/middie": "^8.3.3",
     "dotenv": "^16.0.0",
     "fastify": "^4.0.0",
     "mongoose": "^8.0.0",
+    "nexoguard": "file:../nexoguard",
     "zod": "^3.0.0"
   },
   "devDependencies": {
