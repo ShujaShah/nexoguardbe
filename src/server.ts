@@ -30,7 +30,7 @@ const start = async () => {
       excludePaths: ['/api/v1/ingest/logs']
     });
 
-    fastify.use(shield.protect());
+    // fastify.use(shield.protect());
     // fastify.use('/health', shield.protect())
     await fastify.listen({ port: config.port, host: '127.0.0.1' });
     console.log(`🚀 Fastify running on http://localhost:${config.port}`);
